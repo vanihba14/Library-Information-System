@@ -65,6 +65,11 @@ def fun(e):
                     gender='Male'
                 if x[3]==2:
                     gender='Female'
+                #abhhbcsdhbvf
+                #dsndnfndf
+                customerrr=0
+                customerrr=1
+                customerrr = 2
                 Label(root,text="Roll No ",font="Algerian 30 bold",fg="blue").grid(row=3,column=0)
                 Label(root,text=x[0],font="Algerian 30 bold",fg="red").grid(row=3,column=1)
                 
