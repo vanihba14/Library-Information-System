@@ -9,6 +9,10 @@ struct Node {
 	int data; 
 	struct Node *left, *right; 
 }; 
+struct newNode { 
+	int data; 
+	struct Node *left, *right; 
+}; 
 
 // function to print the zigzag traversal 
 void zizagtraversal(struct Node* root) 
@@ -62,7 +66,7 @@ void zizagtraversal(struct Node* root)
 } 
 
 // A utility function to create a new node 
-struct Node* newNode(int data) 
+struct Node* newestNode(int data) 
 { 
 	struct Node* node = new struct Node; 
 	node->data = data; 
@@ -83,7 +87,6 @@ int main()
 	root->right->right = newNode(4); 
 	cout << "ZigZag Order traversal of binary tree is \n"; 
 
-	zizagtraversal(root); 
 
 	return 0; 
 } 
