@@ -13,15 +13,7 @@ struct Node {
 // function to print the zigzag traversal 
 void zizagtraversal(struct Node* root) 
 { 
-	// if null then return 
 	
-
-	// declare two stacks 
-	stack<struct Node*> currentlevel; 
-	stack<struct Node*> nextlevel; 
-
-	// push the root 
-	currentlevel.push(root); 
 
 	// check if stack is empty 
 	bool lefttoright = true; 
@@ -42,14 +34,10 @@ void zizagtraversal(struct Node* root)
 			if (lefttoright) { 
 				if (temp->left) 
 					nextlevel.push(temp->left); 
-				if (temp->right) 
-					nextlevel.push(temp->right); 
 			} 
 			else { 
 				if (temp->right) 
 					nextlevel.push(temp->right); 
-				if (temp->left) 
-					nextlevel.push(temp->left); 
 			} 
 		} 
 
