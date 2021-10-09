@@ -14,8 +14,7 @@ struct Node {
 void zizagtraversal(struct Node* root) 
 { 
 	// if null then return 
-	if (!root) 
-		return; 
+	
 
 	// declare two stacks 
 	stack<struct Node*> currentlevel; 
