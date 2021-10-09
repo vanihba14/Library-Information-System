@@ -34,6 +34,8 @@ def fun(e):
         root=Toplevel()
         root.geometry("600x450")
         root.title("Student Page")
+        root.title("Student Page1")
+        root.title("Student Page2")
         Label(root,text="Students Profile",font="Algerian 30 bold",bg="blue",fg="red").place(x=90,y=10)
         Label(root,text=' Roll No ',font='Algerian',fg='red').place(x=90,y=70)
         roll=Entry(root)
