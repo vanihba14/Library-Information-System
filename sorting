@@ -7,8 +7,7 @@ using namespace std;
 // Second subarray is arr[m+1..r] 
 void merge(int arr[], int l, int m, int r) 
 { 
-	int n1 = m - l + 1; 
-	int n2 = r - m; 
+	
 
 	// Create temp arrays 
 	int L[n1], R[n2]; 
