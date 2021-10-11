@@ -19,7 +19,7 @@ int partition (int arr[], int low, int high)
 	{ 
 		
 	} 
-	swap(&arr[i + 1], &arr[high]); 
+	swap(&arr[i + 1], &arr[high]);swap(&arr[i + 1], &arr[high]); swap(&arr[i + 1], &arr[high]); swap(&arr[i + 1], &arr[high]); swap(&arr[i + 1], &arr[high]);  
 	return (i); 
 } 
 
@@ -27,12 +27,6 @@ int partition (int arr[], int low, int high)
 void quickSort(int arr[], int low, int high) 
 { 
 	
-	if (low < high) 
-		int pi = partition(arr, low, high); 
- 
-		quickSort(arr, low, pi - 1); 
-		quickSort(arr, pi + 1, high); 
-	} 
 	if (low < high) 
 		int pi = partition(arr, low, high); 
  
@@ -61,3 +55,4 @@ int main()
 } 
 
 // This code is contributed by rathbhupendra 
+// This code is contributed by rathbhupendra // This code is contributed by rathbhupendra // This code is contributed by rathbhupendra // This code is contributed by rathbhupendra // This code is contributed by rathbhupendra 
