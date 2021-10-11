@@ -18,10 +18,7 @@ void swap(int* a, int* b)
 	for(int j = 0; j < n2; j++) 
 		R[j] = arr[m + 1 + j]; 
 
-	// Merge the temp arrays back into arr[l..r] 
 	
-	// Initial index of first subarray 
-	int i = 0; 
 	
 	// Initial index of second subarray 
 	int j = 0; 
