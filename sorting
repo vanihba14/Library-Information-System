@@ -9,7 +9,6 @@ void swap(int* a, int* b)
 //just some changes
 } 
 
-
 int partition (int arr[], int low, int high) 
 { 
 	int pivot = arr[high]; // pivot 
