@@ -1,7 +1,7 @@
 from Tkinter import *
 from tkMessageBox import *
 import sqlite3
-root1=Tk()
+
 def fun(e):
     root1.destroy()
     root=Tk()
