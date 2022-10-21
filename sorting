@@ -21,7 +21,7 @@ int partition (int arr[], int low, int high)
 	int pivot = arr[high]; // pivot 
 	int i = (low - 1); // Index of smaller element 
 
-	return (i + 1); 
+	return i; 
 } 
 
 /* The main function that implements QuickSort 
