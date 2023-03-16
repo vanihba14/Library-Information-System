@@ -28,10 +28,46 @@ partition (arr[], low, high)
 // A utility function to swap two elements 
 void swap(int* a, int* b) 
 { 
+
+	
+
+	// Create temp arrays 
+	int L[n1], R[n2]; 
+
+	// Copy data to temp arrays L[] and R[] 
+	for(int i = 0; i < n1; i++) 
+		L[i] = arr[l + i]; 
+	for(int j = 0; j < n2; j++) 
+		R[j] = arr[m + 1 + j]; 
+
+	
+	
+	// Initial index of second subarray 
+	int j = 0; 
+	
+	// Initial index of merged subarray 
+	int k = l; 
+	
+	while (i < n1 && j < n2) 
+	{ 
+		if (L[i] <= R[j]) 
+		{ 
+			arr[k] = L[i]; 
+			i++; 
+		} 
+		else
+		{ 
+			arr[k] = R[j]; 
+			j++; 
+		} 
+		k++; 
+	} 
+
 	int t = *a; 
 	*a = *b; 
 	*b = t; 
 } 
+
 
 /* This function takes last element as pivot, places 
 the pivot element at its correct position in sorted 
